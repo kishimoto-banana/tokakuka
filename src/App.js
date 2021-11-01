@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import Footer from "./components/Footer";
+import { Typography } from "@mui/material";
+import { Box } from "@mui/system";
+import { Route, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
 
-function App() {
+const NotFound = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Typography variant="h2" component="h2">
+      Not Found
+    </Typography>
+  );
+};
+
+export default function App() {
+  return (
+    <Box
+      sx={{
+        textAlign: "center",
+        display: "flex",
+        flexDirection: "column",
+        minHeight: "100vh",
+      }}
+    >
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={About} />
+        <Route component={NotFound} />
+      </Switch>
+      <Footer />
+    </Box>
   );
 }
-
-export default App;
