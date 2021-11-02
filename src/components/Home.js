@@ -7,6 +7,7 @@ import SnsShare from "./SnsShare";
 
 const Home = () => {
   const shareUrl = "https://tokakuka.web.app/";
+  const shareTitle = "トカクカ";
 
   return (
     <Container maxWidth="xs">
@@ -34,7 +35,9 @@ const Home = () => {
         </Link>
 
         <Box sx={{ my: 2 }}>
-          <SnsShare shareUrls={{ twitter: shareUrl, facebook: shareUrl }} />
+          <SnsShare
+            shareUrls={{ twitter: shareUrl, facebook: shareUrl, line: shareUrl }} shareTitle={shareTitle}
+          />
         </Box>
       </Box>
     </Container>
