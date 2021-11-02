@@ -12,8 +12,8 @@ const Home = () => {
   return (
     <Container maxWidth="xs">
       <Box sx={{ my: 4 }}>
-        <img src="/tokakuka-logo.png" alt="title" width="150" height="170" />
-        <Typography variant="h4" component="h1" gutterBottom>
+        <img src="/tokakuka-logo.png" alt="title" width="120" height="130" />
+        <Typography variant="h5" component="h1" gutterBottom>
           トカクカ
         </Typography>
         <Typography variant="subtitle1" component="div" gutterBottom>
