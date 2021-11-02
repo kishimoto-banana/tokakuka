@@ -6,6 +6,8 @@ import { Box } from "@mui/system";
 import SnsShare from "./SnsShare";
 
 const Home = () => {
+  const shareUrl = "https://tokakuka.web.app/";
+
   return (
     <Container maxWidth="xs">
       <Box sx={{ my: 4 }}>
@@ -32,7 +34,7 @@ const Home = () => {
         </Link>
 
         <Box sx={{ my: 2 }}>
-          <SnsShare shareUrls={{ twitter: "#", facebook: "#" }} />
+          <SnsShare shareUrls={{ twitter: shareUrl, facebook: shareUrl }} />
         </Box>
       </Box>
     </Container>
