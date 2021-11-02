@@ -8,6 +8,7 @@ import { Box } from "@mui/system";
 
 const SearchTextField = styled(TextField)`
   background-color: #ffffff;
+  border-radius: 50px;
   fieldset {
     border-radius: 50px
   }
