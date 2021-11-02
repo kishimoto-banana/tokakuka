@@ -4,12 +4,30 @@ import { Box } from "@mui/system";
 import { Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
+import { Grid } from "@mui/material";
 
 const NotFound = () => {
   return (
-    <Typography variant="h2" component="h2">
-      Not Found
-    </Typography>
+    <Box sx={{ my: 4 }}>
+      <Grid
+        container
+        spacing={1}
+        align="center"
+        justify="center"
+        direction="column"
+      >
+        <Grid item>
+          <Typography variant="h4" component="div">
+            404
+          </Typography>
+        </Grid>
+        <Grid item>
+          <Typography variant="h6" component="div">
+            Page Not Found.
+          </Typography>
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 
