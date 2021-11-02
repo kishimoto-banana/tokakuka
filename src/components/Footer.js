@@ -23,7 +23,6 @@ const Footer = () => {
           }}
         >
           <Link
-            className="my-nav"
             to="/"
             style={{
               textDecoration: "none",
