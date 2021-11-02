@@ -15,7 +15,7 @@ const SearchResult = ({ searchedWord, searchedMunicipality }) => {
             <Box sx={{ fontWeight: "bold", display: "inline" }}>
               {searchedWord}
             </Box>
-            は{}
+            は
             {searchedMunicipality === "" ? (
               "分からない"
             ) : (
