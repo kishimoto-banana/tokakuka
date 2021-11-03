@@ -19,6 +19,7 @@ const SearchBar = ({placeholder, suggestions, handleInputChange, handleChange}) 
     <Box>
       <Autocomplete
         freeSolo
+        blurOnSelect
         disableClearable
         onInputChange={handleInputChange}
         onChange={handleChange}
